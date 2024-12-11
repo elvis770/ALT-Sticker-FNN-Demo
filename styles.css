@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;  /* Ensure the logo stays above other content */
+}
+
+.logo {
+    width: 100px;  /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 420px;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 400px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #d3d3d3;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result-box {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 420px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+}
+
+.low {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.good {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.high {
+    background-color: #FFEB3B; /* Yellow */
+    color: black;
+}
+
+#help-icon {
+    position: fixed;
+    bottom: 20px;  /* Position 20px from the bottom */
+    right: 20px;   /* Position 20px from the right */
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  /* Ensure it stays above other elements */
+}
+
+#help-icon:hover {
+    background-color: #45a049;
+}
+
+/* Style for the chart containers */
+canvas {
+    display: block; /* Ensure the canvas takes up only the space it needs */
+    margin: 20px auto; /* Center the canvas */
+    max-width: 100%;  /* Make it responsive */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Additional spacing and layout adjustments */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.help-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.help-section h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.help-section ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.help-section ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.result-box {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.result-box.low {
+    background-color: yellow;
+    color: black;
+}
+
+.result-box.good {
+    background-color: green;
+    color: white;
+}
+
+.result-box.high {
+    background-color: red;
+    color: white;
+}
